@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my very first website</title>
+  <style>
+    /* Base Resets & Cute Fonts */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', 'Chalkboard SE', 'Quicksand', sans-serif;
+    }
+
+    /* Ladybug Patterned Background */
+    body {
+      background-color: #fff0f3;
+      background-image:
+        radial-gradient(#ff4d6d 18%, transparent 19%),
+        radial-gradient(#2b2b2b 18%, transparent 19%);
+      background-size: 50px 50px;
+      background-position: 0 0, 25px 25px;
+      color: #333;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Main Card Container */
+    .profile-card {
+      max-width: 500px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      border: 4px solid #ff758f;
+      border-radius: 30px;
+      padding: 25px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      text-align: center;
+      position: relative;
+    }
+
+    /* Anime Chibi Decoration Header */
+    .chibi-header {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+    }
+
+    h1 {
+      color: #c9184a;
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+
+    .tagline {
+      color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    /* Profile Photo Frame */
+    .photo-container {
+      position: relative;
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 20px;
+    }
+
+    .profile-pic {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 4px solid #ff4d6d;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(255, 77, 109, 0.3);
+    }
+
+    /* About Me Box */
+    .about-box {
+      background: #ffe6e8;
+      border: 2px dashed #ffb3c1;
+      border-radius: 20px;
+      padding: 15px;
+      margin-bottom: 25px;
+      text-align: left;
+    }
+
+    .about-box h2 {
+      color: #a4133c;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .about-box p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    /* Social Media Links Section */
+    .section-title {
+      color: #a4133c;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .social-btn {
+      display: block;
+      padding: 12px;
+      border-radius: 50px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95rem;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .social-btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    /* Social Button Colors */
+    .facebook { background-color: #1877f2; }
+    .instagram { background-color: #e1306c; }
+    .tiktok { background-color: #000000; }
+    .github { background-color: #333333; }
+
+    /* Photo Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 2px solid #ffb3c1;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <div class="chibi-header">🐞 🌸</div>
+    <h1>Resme</h1>
+    <p class="tagline">Welcome to my personal space!</p>
+
+    <!-- About Me Section -->
+    <div class="about-box">
+      <h2><b>About Me 🐞</b></h2>
+      <p>Hi! This is my first website actually i watched toturial to make this website creative btw my name is Resme Datu Grade 11 senior high school.Im 16 yrs old techpro (ICT) well some subject is hard but i managed to get it done i hope that i will pass at this senior high school.</p>
+      <p> <b>ABOUT ME</b></p>
+      <p>Birth Date: may:14 2010</p>
+      <p> Hobby: playing roblox, drawing,writting songs,sleeping,and foodie</p>
+      <p>Favorite:adobo, spaghetti, sweet foods</p>
+      <p> Allergies: I Dont Know Yet</p>
+    </div>
+
+    <!-- Social Media Links -->
+    <h2 class="section-title">Connect With Me</h2>
+    <div class="social-links">
+      <a href="https://www.facebook.com/princess.resme" target="_blank" class="social-btn facebook">📒 Facebook</a>
+      <a href="https://www.instagram.com/r.resume?igsh=MWwyd2s1Yzdpam0xZQ==" target="_blank" class="social-btn instagram">💌 Instagram</a>
+      <a href="https://www.tiktok.com/@imsolove123?_r=1&_t=ZS-991KCSmvgJR" target="_blank" class="social-btn tiktok"> 🎶 Main TikTok</a>
+      <a href="https://www.tiktok.com/@leahsame?_r=1&_t=ZS-991KEcvnOj6" target="_blank" class="social-btn tiktok">🎶 Second tiktok</a>
+    </div>
+
+    <footer>
+      Created with 🐞 By Res 
